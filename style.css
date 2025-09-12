@@ -53,11 +53,11 @@ nav .container {
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0rem;
 }
 
 .logo img {
-  height: 360px; /* tamanho maior da imagem */
+  height: 350px; /* tamanho maior da imagem */
   width: auto;
 }
 
