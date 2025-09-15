@@ -632,25 +632,28 @@ footer {
 
 /* LAZY LOAD */
 
-section {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 1s ease, transform 1s ease;
-
-
-}
-
-section.lazy {
+/* Remova o seletor 'section' e use apenas .lazy */
+.lazy {
   opacity: 0;
   transform: translateY(40px);
   will-change: opacity, transform;
 }
 
-
-section:not(.lazy) {
+/* Remova o seletor 'section' e use apenas :not(.lazy) */
+:not(.lazy) {
   opacity: 1;
   transform: translateY(0);
+  transition: opacity 1s ease, transform 1s ease;
 }
+
+/* Opcional: Remova o CSS original da tag <section> se não for mais necessário */
+/*
+section {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease, transform 1s ease;
+}
+*/
 
 /* LAZY LOAD DA TL */
 
@@ -680,7 +683,7 @@ section:not(.lazy) {
 
 .automation-timeline {
             padding: 80px 0;
-            background: #e7e7e7;
+            background: #FFFFFF;
             position: relative;
             overflow: hidden;
         }
