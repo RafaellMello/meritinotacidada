@@ -256,7 +256,7 @@ section {
   font-size: 2.5rem;
   font-weight: 700;
   color: rgb(68, 68, 68);
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
 }
 
 .section-subtitle {
@@ -982,7 +982,7 @@ section {
 #premios .section-title {
     font-size: 3rem;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: -5px;
     color: #ffffff;
     text-align: center;
 }
@@ -990,7 +990,7 @@ section {
 #premios .section-subtitle {
     font-size: 1.25rem;
     color: #ddd;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -1098,15 +1098,23 @@ html, body {
 .prizes-grid {
     display: grid;
     grid-template-columns: 1fr; /* Mobile: uma coluna */
-    gap: 20px; /* Reduzi um pouco o gap */
+    gap: 20px; 
     justify-content: center;
-    max-width: 100%; /* Evita ultrapassar a tela */
+    max-width: 100%; 
     margin: 0 auto;
-    padding: 0 10px; /* Padding interno para evitar overflow */
+    padding: 0 10px;
+}
+
+/* Desktop: duas colunas */
+@media (min-width: 768px) {
+    .prizes-grid {
+        grid-template-columns: 1fr 1fr; /* Duas colunas em telas maiores */
+    }
 }
 
 /* Ajuste das colunas */
 .prizes-column {
-    padding: 20px; /* Reduzi padding interno */
-    width: 100%; /* Garante que não ultrapasse a coluna da grid */
+    padding: 20px; 
+    width: 100%; 
 }
+
