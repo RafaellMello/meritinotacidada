@@ -969,3 +969,112 @@ section {
                 font-size: 2.5rem;
             }
         }
+
+/* Secção de Premios */
+
+/* Seção de prêmios */
+#premios {
+    background: linear-gradient(135deg, #121212, #121212);
+    padding: 80px 20px;
+    color: #fff;
+}
+
+#premios .section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#premios .section-subtitle {
+    font-size: 1.25rem;
+    color: #ddd;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/* Container para as duas colunas */
+.prizes-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Padrão mobile: uma coluna */
+    gap: 40px;
+    justify-content: center;
+    max-width: 900px; /* Limita a largura do container */
+    margin: 0 auto; /* Centraliza na página */
+}
+
+/* Estilo para as colunas */
+.prizes-column {
+    background: #1a1a1a;
+    border-radius: 15px;
+    padding: 30px;
+    border: 1px solid #2A2A2A;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.prizes-column:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 215, 0, 0.3);
+}
+
+/* Estilo para a lista de prêmios */
+.prize-list {
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0;
+    margin: 0;
+}
+
+.prize-list li {
+    font-size: 1.1rem;
+    padding: 12px 0;
+    border-bottom: 1px solid #2a2a2a;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.prize-list li:last-child {
+    border-bottom: none;
+}
+
+/* Ícone do prêmio na lista */
+.prize-icon {
+    font-size: 1.5rem;
+    color: #FFD700;
+}
+
+/* Responsivo */
+@media (min-width: 768px) {
+    .prizes-grid {
+        grid-template-columns: 1fr 1fr; /* Duas colunas em telas maiores */
+    }
+}
+
+@media (max-width: 480px) {
+    #premios {
+        padding: 60px 15px;
+    }
+
+    #premios .section-title {
+        font-size: 2rem;
+    }
+
+    #premios .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 40px;
+    }
+
+    .prizes-column {
+        padding: 20px;
+    }
+
+    .prize-list li {
+        font-size: 1rem;
+    }
+
+    .prize-icon {
+        font-size: 1.2rem;
+    }
+}
