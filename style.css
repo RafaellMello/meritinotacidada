@@ -1125,3 +1125,15 @@ html, body {
     width: 100%; 
 }
 
+@media (max-width: 768px) {
+    #inicio p {
+        display: none; /* esconde no celular */
+    }
+}
+
+@media (max-width: 768px) {
+    #inicio h1 {
+        font-size: 2.7rem; /* esconde no celular */
+        text-align: left; /* alinha à esquerda */
+    }
+}
