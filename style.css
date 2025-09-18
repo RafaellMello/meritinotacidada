@@ -379,11 +379,30 @@ section {
   background: #ffffff;
 }
 
+.pricing {
+  background: 
+    radial-gradient(circle at center, rgba(3, 179, 100, 0.292) 0%, transparent 70%),
+    #0c0c12; /* cor de fundo base escura */
+}
+
+
+#planos .section-title {
+    color: #fff;
+}
+
 #planos .section-subtitle {
     font-size: 1.25rem;
     padding: 0 0 0 0;
     margin-bottom: 50px;
     text-align: center;
+    color: #fff;
+}
+
+#planos .highlight {
+  background: linear-gradient(135deg, #FFD700, #FFC107);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .pricing-grid {
   display: grid;
@@ -473,7 +492,9 @@ section.faq .section-title {
 
 .faq {
   padding: 80px 0;
-  background: #121212;
+  background: 
+    radial-gradient(circle at center, rgba(3, 44, 179, 0.042) 0%, transparent 70%),
+    #0c0c12; /* cor de fundo base escura */
 }
 
 .faq-list {
@@ -777,17 +798,17 @@ section {
             font-size: 1.8rem;
             font-weight: 700;
             color: #e2dfdf;
-            box-shadow: 0 8px 25px #274394;
+            box-shadow: 0 0px 1px #274394;
             z-index: 3;
             animation: pulse 2s infinite;
         }
 
         @keyframes pulse {
             0%, 100% { 
-                box-shadow: 0 8px 25px #274394;
+                box-shadow: 0px 0px 10px #274394;
             }
             50% { 
-                box-shadow: 0 8px 35px #274394;
+                box-shadow: 0px 0px 20px #274394;
                 transform: translate(-50%, -50%) scale(1.05);
             }
         }
@@ -981,7 +1002,9 @@ section {
 
 /* Seção de prêmios */
 #premios {
-    background: linear-gradient(135deg, #121212, #121212);
+    background: 
+    radial-gradient(circle at center, rgba(3, 44, 179, 0.042) 0%, transparent 70%),
+    #0c0c12; /* cor de fundo base escura */
     padding: 80px 20px;
     color: #fff;
 }
@@ -1023,7 +1046,7 @@ section {
 .prizes-column:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-    border-color: #ffc1074d;
+    border-color: #e0e0e084;
 }
 
 /* Estilo para a lista de prêmios */

@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, {
     root: null,
-    rootMargin: '0px 0px 200px 0px',
-    threshold: 0.4
+    rootMargin: '0px 0px 00px 0px',
+    threshold: 0.7
   });
 
   lazyElements.forEach(el => observer.observe(el));
