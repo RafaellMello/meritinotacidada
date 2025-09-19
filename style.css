@@ -1247,7 +1247,7 @@ html, body {
     position: fixed;
     top: 0;
     right: -18px;
-    height: 30vh;
+    height: 32.5vh;
     width: 250px;
     background-color: #fff;
     display: flex;
@@ -1281,36 +1281,43 @@ html, body {
   }
 
   /* Hamburger */
-  .hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 25px;
-    height: 20px;
-    cursor: pointer;
-    z-index: 10000;
-  }
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  padding: 3px;       /* Adicionei padding interno */
+  justify-content: center;  /* Centralizei melhor */
+  align-items: center;
+  width: 30px;        /* Aumentei o tamanho */
+  height: 30px;
+  cursor: pointer;
+  z-index: 10000;
+  position: relative;
+  overflow: visible;
+}
 
-  .hamburger span {
-    display: block;
-    height: 3px;
-    width: 100%;
-    background-color: #000;
-    border-radius: 0px;
-    transition: all 0.3s ease;
-  }
+.hamburger span {
+  display: block;
+  height: 2px; /* ajustado para caber o X */
+  width: 20px;
+  margin: 2px 0; 
+  background-color: #000;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  transform-origin: center center;
+}
 
-  .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
+/* Animação do X corrigida */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(4px, 4px);
+}
 
-  .hamburger.active span:nth-child(2) {
-    opacity: 0;
-  }
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
 
-  .hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-  }
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -4px);
+}
 
 }
 
