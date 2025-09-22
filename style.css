@@ -387,7 +387,7 @@ section {
 }
 
 #planos .highlight {
-  background: linear-gradient(135deg, #FFD700, #FFC107);
+  background: linear-gradient(135deg, #ffbf00, #ffee07);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
